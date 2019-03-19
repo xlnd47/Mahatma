@@ -1,7 +1,7 @@
 module.exports = {
-    name: 'ping',
+    name: 'yt',
     aliases : ["play", "joutube"],
-	description: 'Ping!',
+	description: "Play music from youtube!",
 	execute(message, args) {
 		const fs = require("fs");
         const Discord = require("discord.js");
