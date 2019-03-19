@@ -28,13 +28,13 @@ bot.on("message", function(message) {
             .addField(" - avatar", "Show your Avatar.")
             .addField(" - ping", "PING PONG.")
             .setColor(0x00FFEE)
-            .setFooter("Ⓒ 2019 Example Bot.", bot.user.displayAvatarURL);
+            .setFooter("Ⓒ 2019 Mahatma Bot.", bot.user.displayAvatarURL);
         var embedhelpadmin = new Discord.RichEmbed()
             .setAuthor("💬 Moderator Commands.")
             .addField(" - prune", "Prune up to `99` Messages.")
             .addField(" - kick", "Kick someone from your Server.")
             .setColor(0x00FFEE)
-            .setFooter("Ⓒ 2019 Example Bot.", bot.user.displayAvatarURL);
+            .setFooter("Ⓒ 2019 Mahatma Bot.", bot.user.displayAvatarURL);
             message.channel.send(embedhelpmember)
         if(message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send(embedhelpadmin);
     };
