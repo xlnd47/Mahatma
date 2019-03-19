@@ -6,7 +6,7 @@ var bot = new Discord.Client();
 
 // Events.
 bot.on("ready", function() {
-    bot.user.setGame(`Yo, I'm Mahatma!`);
+    bot.user.setGame(`Os kilo scoop`);
     console.log(`${bot.user.username} is Ready!`);
 });
 
