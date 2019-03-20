@@ -14,5 +14,14 @@
     "node-fetch": "^2.1.1",
     "opusscript": "0.0.6",
     "ytdl-core": "^0.29.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xlnd47/Mahatma.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xlnd47/Mahatma/issues"
+  },
+  "homepage": "https://github.com/xlnd47/Mahatma#readme"
 }
