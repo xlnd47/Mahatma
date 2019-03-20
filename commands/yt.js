@@ -29,13 +29,14 @@ module.exports = {
 
             const dispatcher = connection.playStream(ytdl(args[1]))
                 .on("end", () => {
-                    console.log("song ended")
+                    console.log("song ended");
+                    voiceChannel.leave();
                 })
                 .on("error", error =>{
                     console.error(error);
                 });
             dispatcher.setVolume(0.5);
-            
+
 
 
 
