@@ -1,5 +1,5 @@
 const fs = require("fs");
-const Discord = require("discord.js"); 
+const Discord = require("discord.js");
 const prefix = process.env.PREFIX;
 
 const client = new Discord.Client();
