@@ -1,5 +1,6 @@
 const fs = require("fs");
-const Discord = require("discord.js");
+const Discord = require("discord.js"); // We Call The Packages.
+// const PREFIX = "<"; // You can change this Prefix to whatever you want.
 const prefix = process.env.PREFIX;
 
 const client = new Discord.Client();
@@ -12,8 +13,8 @@ for (const file of commandFiles) {
 	client.commands.set(command.name, command);
 }
 
-client.once('ready', async () => {
-	console.log(`Logged in as ${client.user.tag}!`);
+client.once('ready', () => {
+	console.log('Ready!');
 });
 
 client.on('message', message => {
@@ -32,5 +33,6 @@ client.on('message', message => {
 	}
 });
 
-
+// Bot Login.
+// bot.login('YourAwesomeBotToken');
 client.login(process.env.BOT_TOKEN);
